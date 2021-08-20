@@ -1,0 +1,76 @@
+#
+
+
+## link para aplicar API
+https://developer.microsoft.com/en-us/graph/graph-explorer
+
+# Envio de email
+
+{
+    "message": {
+        "subject": "Meet for lunch?",
+        "body": {
+            "contentType": "Text",
+            "content": "The new cafeteria is open."
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "address": "matias.vidal@fracttal.com"
+                }
+            }
+        ]
+    }
+}
+
+# Resultado al consultar tareas por personas
+https://graph.microsoft.com/v1.0/me/planner/tasks
+
+        {
+            "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAYCc=\"",
+            "planId": "pvigIuEpGkqAwQCcEwBYvGUABoUl",
+            "bucketId": "6F-bV2EFR0qGob_M1qHuImUACyQa",
+            "title": "1. Leer Artículo Historia de una Idea - ",
+            "orderHint": "8585722940305735877PI",
+            "assigneePriority": "8585722937347450719",
+            "percentComplete": 100,
+            "startDateTime": null,
+            "createdDateTime": "2021-08-18T18:55:14.9352452Z",
+            "dueDateTime": "2021-08-18T10:00:00Z",
+            "hasDescription": false,
+            "previewType": "noPreview",
+            "completedDateTime": "2021-08-19T12:28:42.4318901Z",
+            "referenceCount": 1,
+            "checklistItemCount": 0,
+            "activeChecklistItemCount": 0,
+            "conversationThreadId": "AAQkADlhODIzNTc0LTMzYTAtNGRhNC1hYmEyLWUyYWEzYmM3YmFlMwMkABAAq4HDBx3RE06JePSjUgQ6BxAAq4HDBx3RE06JePSjUgQ6Bw==",
+            "id": "S86It-PKxUWiEEikRvWNbmUADf4m",
+            "createdBy": {
+                "user": {
+                    "displayName": null,
+                    "id": "640db341-a7b3-4e8f-808c-b5fb58d17d0a"
+                }
+            },
+            "completedBy": {
+                "user": {
+                    "displayName": null,
+                    "id": "e7a643a0-ac4a-45e6-a9df-d780b1613679"
+                }
+            },
+            "appliedCategories": {
+                "category5": true
+            },
+            "assignments": {
+                "e7a643a0-ac4a-45e6-a9df-d780b1613679": {
+                    "@odata.type": "#microsoft.graph.plannerAssignment",
+                    "assignedDateTime": "2021-08-18T18:59:10.7325088Z",
+                    "orderHint": "8585722937947919421P*",
+                    "assignedBy": {
+                        "user": {
+                            "displayName": null,
+                            "id": "640db341-a7b3-4e8f-808c-b5fb58d17d0a"
+                        }
+                    }
+                }
+            }
+        }
